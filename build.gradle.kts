@@ -19,15 +19,21 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	//implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springdoc:springdoc-openapi-ui:1.6.9")
 	implementation("org.springdoc:springdoc-openapi-kotlin:1.6.9")
 	implementation("org.mapstruct:mapstruct:1.5.2.Final")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive")
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	implementation("com.h2database:h2:2.1.214")
+	testImplementation("com.h2database:h2:2.1.214")
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("com.h2database:h2:2.1.214")
 	kapt("org.mapstruct:mapstruct-processor:1.5.2.Final")
 }
 
